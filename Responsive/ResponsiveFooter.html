@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fafafa;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            transition: background-color 0.5s;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            footer {
+                background-color: #939292; /* Darker gray for tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            footer {
+                background-color: #000000; /* Even darker for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Footer</h1>
+    <p>This is a simple page to demonstrate a responsive footer.</p>
+    <footer>
+        <p>&copy; 2024 My Website | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

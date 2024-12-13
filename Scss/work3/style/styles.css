@@ -1,0 +1,132 @@
+.card-primary {
+  width: 300px;
+  height: 180px;
+  margin: 15px;
+  padding: 20px;
+  background-color: #3498db;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+.card-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.card-primary h2 {
+  font-size: 1.4rem;
+  margin: 0 0 10px;
+}
+.card-primary p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card-secondary {
+  width: 300px;
+  height: 180px;
+  margin: 15px;
+  padding: 20px;
+  background-color: #2ecc71;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+.card-secondary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.card-secondary h2 {
+  font-size: 1.4rem;
+  margin: 0 0 10px;
+}
+.card-secondary p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card-danger {
+  width: 300px;
+  height: 180px;
+  margin: 15px;
+  padding: 20px;
+  background-color: #e74c3c;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+.card-danger:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.card-danger h2 {
+  font-size: 1.4rem;
+  margin: 0 0 10px;
+}
+.card-danger p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card-warning {
+  width: 300px;
+  height: 180px;
+  margin: 15px;
+  padding: 20px;
+  background-color: #f39c12;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+.card-warning:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.card-warning h2 {
+  font-size: 1.4rem;
+  margin: 0 0 10px;
+}
+.card-warning p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card-info {
+  width: 300px;
+  height: 180px;
+  margin: 15px;
+  padding: 20px;
+  background-color: #8e44ad;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+.card-info:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.card-info h2 {
+  font-size: 1.4rem;
+  margin: 0 0 10px;
+}
+.card-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}/*# sourceMappingURL=styles.css.map */

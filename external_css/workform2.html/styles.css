@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .outer {
+    width: 450px;
+    height: 600px;
+    background-color: brown;
+    margin-left: 35%;
+    margin-top: 10px;
+  }
+  .medicine-img {
+    width: 430px;
+    height: 200px;
+    margin-top: 10px;
+  }
+  .boxes {
+    width: 415px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: pink;
+    margin-bottom: 5px;
+  }
+  .text-area {
+    background-color: pink;
+    width: 415px;
+    border-radius: 15px;
+  }

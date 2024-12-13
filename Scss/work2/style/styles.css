@@ -1,0 +1,60 @@
+.card {
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 15px auto;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  line-height: 1.4;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+.card h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #2c3e50;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  flex-grow: 1;
+  overflow-y: auto;
+  margin: 5px 0;
+}
+.card img {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
+}
+.card .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  border-top: 1px solid #e0e0e0;
+}
+.card .card-footer a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+.card .card-footer a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Table Example</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+            transition: background-color 0.4s, transform 0.4s, box-shadow 0.4s;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e0f7fa; /* Light blue */
+            transform: scale(1.02); /* Slightly scale up */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+        }
+        td:hover {
+            color: #007bff; /* Change text color on hover */
+            font-weight: bold; /* Bold text on hover */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Item 1</td>
+                <td>Description of Item 1</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>Item 2</td>
+                <td>Description of Item 2</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Item 3</td>
+                <td>Description of Item 3</td>
+                <td>$30</td>
+            </tr>
+            <tr>
+                <td>Item 4</td>
+                <td>Description of Item 4</td>
+                <td>$40</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

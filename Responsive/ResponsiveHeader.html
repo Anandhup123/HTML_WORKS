@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4; /* Light background for contrast */
+        }
+
+        nav {
+            background-color: #007bff; /* Default blue background color */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: background-color 0.3s, transform 0.3s;
+            border-radius: 4px; /* Rounded link corners */
+        }
+
+        nav a:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            transform: scale(1.1); /* Slightly enlarge on hover */
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            nav {
+                background-color: #28a745; /* Green background for tablets */
+            }
+
+            nav a {
+                display: inline-block; /* Inline-block links for tablets */
+                margin: 5px 0; /* Vertical spacing */
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                background-color: #dc3545; /* Red background for mobile */
+            }
+
+            nav a {
+                display: block; /* Stack links vertically on mobile */
+                margin: 10px 0; /* Increased vertical spacing */
+                font-size: 1.2em; /* Larger text for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <h1>Responsive Navigation Bar</h1>
+    <p>Resize the browser to see the effect!</p>
+</body>
+</html>

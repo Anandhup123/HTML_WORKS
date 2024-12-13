@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serif Font with Advanced Attributes</title>
+  <style>
+    /* Importing Google Font with variable weight */
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+    body {
+      font-family: 'Merriweather', serif;
+      font-size: 18px;
+      color: #3a3a3a;
+      line-height: 1.7;
+      font-display: fallback; /* Uses fallback font if loading is delayed */
+      font-variation-settings: "wght" 400; /* Normal weight */
+      font-stretch: 100%; /* Normal width */
+    }
+
+    h1 {
+      font-weight: 700; /* Bold heading */
+      font-stretch: 120%; /* Expanded heading */
+      color: #2a2a2a;
+    }
+
+    p {
+      font-weight: 300; /* Light weight */
+      font-stretch: 85%; /* Condensed width */
+      color: #444;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <h1>Elegant Serif Styling with Merriweather</h1>
+  <p>This paragraph uses font-weight and stretch variations to achieve a refined look.</p>
+</body>
+</html>

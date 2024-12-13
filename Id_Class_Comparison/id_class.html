@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID vs Class Selector</title>
+    <style>
+        /* ID Selector */
+        #unique-element {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        #unique-paragraph {
+            background-color: #f44336;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* Class Selector */
+        .common-element {
+            background-color: #2196F3;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .common-paragraph {
+            background-color: #ff9800;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>ID vs Class Selector Example</h1>
+
+    <div id="unique-element">This element has an ID selector</div>
+    <div class="common-element">This element has a class selector</div>
+    <div class="common-element">This element also has a class selector</div>
+
+    <p id="unique-paragraph">This paragraph has an ID selector</p>
+    <p class="common-paragraph">This paragraph has a class selector</p>
+    <p class="common-paragraph">This paragraph also has a class selector</p>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Column Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+            margin: 0;
+        }
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 800px;
+        }
+        .text-columns {
+            column-count: 3;
+            column-gap: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Multi-Column Layout Example</h2>
+        <div class="text-columns">
+            <p>This layout splits text into multiple columns for better readability. Each column automatically adjusts based on screen size, providing a responsive layout.</p>
+            <p>Responsive layouts ensure that content looks good on all devices, from mobile to desktop. The `column-count` CSS property controls the number of columns, and the `column-gap` property manages spacing between them.</p>
+            <p>With this design, longer text content can be displayed in a more visually appealing way, mimicking the style of magazines or newspapers.</p>
+            <p>Multi-column layouts are helpful for presenting articles, blogs, or any text-heavy content where readability is key. This layout gracefully adapts as you resize the browser window.</p>
+        </div>
+    </div>
+</body>
+</html>

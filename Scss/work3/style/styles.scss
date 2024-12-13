@@ -1,0 +1,54 @@
+// Color Palette for Cards
+$colors: (
+  "primary": #3498db,
+  "secondary": #2ecc71,
+  "danger": #e74c3c,
+  "warning": #f39c12,
+  "info": #8e44ad
+);
+
+// Mixin for card structure
+@mixin card-style($color) {
+  width: 300px;
+  height: 180px;
+  margin: 15px;
+  padding: 20px;
+  background-color: $color;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin: 0 0 10px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+// Generate Cards with Loop
+@each $name in $colors {
+  .card-#{$name} {
+    @include card-style($color);
+  }
+}
+
+// Layout for Cards Container
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+  

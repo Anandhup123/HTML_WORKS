@@ -1,0 +1,50 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+  .first {
+    background-image: url(cat.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+  }
+  .form-for {
+    background-color: rgba(240, 255, 255, 0.404);
+    width: 400px;
+    height: 450px;
+    margin-top: 10rem;
+    margin-left: 65rem;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .form-dis {
+    margin: 10px;
+    width: 18rem;
+    background-color: rgb(255, 0, 247);
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid;
+  }
+  .form-text-box {
+    margin: 10px;
+    width: 18rem;
+    background-color: rgb(255, 0, 247);
+    height: 135px;
+    border-radius: 10px;
+    border: 3px solid;
+  }
+  .padd {
+    margin-top: 5rem;
+  }
+  .button-dis {
+    height: 2rem;
+    width: 5.5rem;
+    background-color: pink;
+    border-radius: 8px;
+  }
+  ::placeholder {
+    color: white;
+    opacity: 1;
+  }

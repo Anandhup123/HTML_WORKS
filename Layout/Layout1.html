@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .flex-container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .card {
+            background-color: #f0f8ff;
+            border-radius: 10px;
+            width: 200px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+        .card p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="card">
+            <h3>Card 1</h3>
+            <p>This is an example of a Flexbox layout.</p>
+        </div>
+        <div class="card">
+            <h3>Card 2</h3>
+            <p>Each card has equal width and spacing.</p>
+        </div>
+        <div class="card">
+            <h3>Card 3</h3>
+            <p>Flexbox makes it easy to align items.</p>
+        </div>
+    </div>
+</body>
+</html>

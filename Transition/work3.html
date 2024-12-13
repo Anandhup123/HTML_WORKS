@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Item Transition</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            width: 200px;
+            margin: 10px auto;
+            padding: 15px;
+            background-color: coral;
+            transition: background-color 0.5s, transform 0.5s;
+            text-align: center;
+        }
+        li:hover {
+            background-color: red;
+            transform: skew(10deg);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50; /* Green background */
+            color: white;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            th, td {
+                font-size: 0.9em; /* Slightly smaller text */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            th, td {
+                font-size: 0.8em; /* Smaller text */
+                display: block; /* Stack rows */
+            }
+            tr {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Item 1</td>
+                <td>Description of Item 1</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>Item 2</td>
+                <td>Description of Item 2</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Item 3</td>
+                <td>Description of Item 3</td>
+                <td>$30</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

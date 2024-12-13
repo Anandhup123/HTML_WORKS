@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuous Image Fade Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .fade-container {
+            width: 400px; /* Width of the container */
+            height: 400px; /* Height of the container */
+            position: relative;
+            overflow: hidden; /* Ensure no overflow */
+        }
+
+        .fade-image {
+            position: absolute;
+            width: 100%; /* Image takes full container */
+            height: 100%; /* Image takes full container */
+            border-radius: 10px; /* Rounded corners */
+            object-fit: cover; /* Cover the container while maintaining aspect ratio */
+            opacity: 0; /* Initially hidden */
+            animation: fade 6s infinite; /* Fading animation */
+        }
+
+        .fade-image:nth-child(1) {
+            animation-delay: 0s; /* First image fades in immediately */
+            opacity: 1; /* Show the first image */
+        }
+
+        .fade-image:nth-child(2) {
+            animation-delay: 3s; /* Second image starts fading in after 3 seconds */
+        }
+
+        @keyframes fade {
+            0%{
+                opacity: 0;
+            }
+            25%{
+                opacity: 0.5;
+            }
+            50%{
+                opacity: 1;
+            }
+            75%{
+                opacity: 0.5;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fade-container">
+        <img class="fade-image" src="https://wallpaperaccess.com/full/31193.jpg" alt="First Image">
+        <img class="fade-image" src="https://wallpapercave.com/wp/wp2506871.jpg" alt="Second Image">
+    </div>
+</body>
+</html>
