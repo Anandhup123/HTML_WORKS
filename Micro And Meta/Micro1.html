@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microdata Example</title>
+</head>
+<body>
+    <div itemscope itemtype="http://schema.org/Product">
+        <h1 itemprop="name">Wireless Headphones</h1>
+        <p itemprop="description">High-quality noise-canceling headphones with Bluetooth support.</p>
+        <p>Price: <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price">99.99</span></p>
+        <p>Brand: <span itemprop="brand">AudioTech</span></p>
+        <div itemprop="review" itemscope itemtype="http://schema.org/Review">
+            <p>Review by: <span itemprop="author">John Doe</span></p>
+            <p>Rating: <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                <span itemprop="ratingValue">4.5</span>/5</span></p>
+        </div>
+    </div>
+</body>
+</html>

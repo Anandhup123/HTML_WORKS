@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microdata - Restaurant</title>
+</head>
+<body>
+    <div itemscope itemtype="http://schema.org/Restaurant">
+        <h1 itemprop="name">The Gourmet Kitchen</h1>
+        <p>Location: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">123 Foodie Street</span>,
+            <span itemprop="addressLocality">Culinary City</span>,
+            <span itemprop="addressRegion">Taste State</span></p>
+        </p>
+        <p>Serves Cuisine: <span itemprop="servesCuisine">Italian</span>, <span itemprop="servesCuisine">French</span></p>
+        <p>Telephone: <span itemprop="telephone">+1-234-567-8900</span></p>
+        <p>Opening Hours: <span itemprop="openingHours">Mon-Sat 9:00 AM - 10:00 PM</span></p>
+        <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+            <p>Rating: <span itemprop="ratingValue">4.7</span> out of 5</p>
+            <p>Based on <span itemprop="reviewCount">150 reviews</span></p>
+        </div>
+    </div>
+</body>
+</html>

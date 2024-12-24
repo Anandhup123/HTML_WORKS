@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Validation</title>
+	<style>
+		.error {
+			border: 2px solid red;
+		}
+		input[type="radio"]:invalid + label {
+			color: red;
+		}
+		input[type="date"]:invalid {
+			border: 2px solid red;
+		}
+		input[type="radio"]:valid + label {
+			color: green;
+		}
+		input[type="date"]:valid {
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Choose an option:</legend>
+			<input type="radio" id="option1" name="options" value="1" required>
+			<label for="option1">Option 1</label><br>
+			<input type="radio" id="option2" name="options" value="2" required>
+			<label for="option2">Option 2</label><br>
+			<input type="radio" id="option3" name="options" value="3" required>
+			<label for="option3">Option 3</label>
+		</fieldset>
+		<br>
+		<label for="date">Select a date:</label>
+		<input type="date" id="date" name="date" required min="2023-01-01" max="2023-12-31">
+		<br><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
+<style>
+	body {
+		font-family: Arial, sans-serif;
+		background-color: #f4f4f4;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+	form {
+		background-color: #fff;
+		padding: 20px;
+		border-radius: 8px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		width: 400px; /* Increased width */
+	}
+	fieldset {
+		border: none;
+		margin-bottom: 10px;
+	}
+	legend {
+		font-size: 1.2em;
+		margin-bottom: 10px;
+	}
+	label {
+		display: block;
+		margin-bottom: 5px;
+	}
+	input[type="radio"] {
+		margin-right: 10px;
+	}
+	input[type="date"] {
+		padding: 5px;
+		border-radius: 4px;
+		border: 1px solid #ccc;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	input[type="submit"] {
+		background-color: #4CAF50;
+		color: white;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	input[type="submit"]:hover {
+		background-color: #45a049;
+	}
+</style>
